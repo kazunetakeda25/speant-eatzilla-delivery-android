@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/xxhdpi_10">
+
+            <RelativeLayout
+                android:id="@+id/order_id_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btm_order_id_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/btm_order_time_txt"
+                    android:text="Order ID #14405765567"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/t_xxh_16"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btm_paid_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btm_order_id_txt"
+                    android:layout_marginTop="@dimen/xxhdpi_10"
+                    android:layout_toLeftOf="@+id/btm_order_time_txt"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/t_xxh_16"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btm_paid_by"
+                    android:layout_marginTop="@dimen/xxhdpi_10"
+                    android:layout_toLeftOf="@+id/btm_order_time_txt"
+                    android:text="Chat Support"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/t_xxh_16"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btm_order_time_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="01 Aug, 11:06 Pm"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/t_xxh_12" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_direction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:drawableEnd="@drawable/ic_track"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:gravity="center_vertical"
+                android:text="@string/view_direction"
+                android:textColor="@color/black"
+                android:textSize="@dimen/t_xxh_16"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxhdpi_10">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:text="Pickup Location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/t_xxh_14" />
+
+                <ImageView
+                    android:id="@+id/btm_pickup_call_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_call" />
+
+                <ImageView
+                    android:id="@+id/btm_pickup_gps_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/xxhdpi_20"
+                    android:layout_toLeftOf="@id/btm_pickup_call_img"
+                    android:src="@drawable/ic_gps"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/pickup_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btm_pickup_hotel_img"
+                    android:layout_width="@dimen/xxhdpi_50"
+                    android:layout_height="@dimen/xxhdpi_50"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/xxhdpi_5"
+                    app:civ_border_color="@color/lit_grey"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xxhdpi_10"
+                    android:layout_toRightOf="@id/btm_pickup_hotel_img"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btm_pickup_hotel_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/t_xxh_14"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btm_pickup_location_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/xxhdpi_5"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/t_xxh_14" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxhdpi_10">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:text="Delivery Location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/t_xxh_14" />
+
+                <ImageView
+                    android:id="@+id/btm_delivery_call_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_call" />
+
+                <ImageView
+                    android:id="@+id/btm_delivery_gps_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/xxhdpi_20"
+                    android:layout_toLeftOf="@id/btm_delivery_call_img"
+                    android:src="@drawable/ic_gps"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/drop_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btm_delivery_hotel_img"
+                    android:layout_width="@dimen/xxhdpi_50"
+                    android:layout_height="@dimen/xxhdpi_50"
+                    android:layout_margin="@dimen/xxhdpi_5"
+                    app:civ_border_color="@color/grey"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xxhdpi_10"
+                    android:layout_toRightOf="@id/btm_delivery_hotel_img"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btm_delivery_hotel_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/t_xxh_14"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btm_delivery_location_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/xxhdpi_5"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/t_xxh_14" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

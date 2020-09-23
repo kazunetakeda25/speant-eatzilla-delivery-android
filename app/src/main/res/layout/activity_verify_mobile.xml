@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.VerifyMobileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarStyleColoured"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/xxhdpi_10"
+        android:layout_marginEnd="@dimen/xxhdpi_10">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/clanpro_news"
+            android:textSize="30sp"
+            android:text="Verification Code"
+            android:layout_margin="@dimen/t_xxh_10"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/t_xxh_20"
+            android:textColor="@color/dark_grey"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:layout_margin="@dimen/xxhdpi_10"
+            tools:text="Please enter the verification code sent to" />
+
+        <!--<com.chaos.view.PinView
+            android:id="@+id/password_field"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:itemCount="5"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/xxhdpi_10"
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            app:lineColor="@color/grey"
+            app:lineWidth="1dp"
+            app:viewType="line" />-->
+
+        <com.chaos.view.PinView
+            android:id="@+id/password_field"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:textSize="@dimen/t_xxh_18"
+            android:layout_marginTop="@dimen/xxhdpi_30"
+            android:layout_gravity="center"
+            app:cursorWidth="2dp"
+            android:imeOptions="actionDone"
+            app:itemCount="5"
+            app:lineColor="@color/grey"
+            app:lineWidth="1dp"
+            app:viewType="line" />
+
+        <TextView
+            android:id="@+id/txt_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/t_xxh_16"
+            android:textColor="@color/black"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/t_xxh_30"
+            android:layout_marginEnd="@dimen/xxhdpi_10"
+           android:text="Resend OTP" />
+
+        <TextView
+            android:id="@+id/txt_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="Next"
+            android:layout_marginTop="@dimen/xxhdpi_50"
+            android:layout_marginStart="@dimen/xxhdpi_10"
+            android:layout_marginEnd="@dimen/xxhdpi_10"
+            android:textSize="@dimen/t_xxh_20"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:padding="@dimen/xxhdpi_10"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

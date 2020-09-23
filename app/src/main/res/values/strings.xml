@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">SPEANT Delivery</string>
+    <string name="skip_login">Skip Login</string>
+    <string name="login_note">Enter your registered phone number or Email to continue Login</string>
+    <string name="hint_phone">Phone number</string>
+    <string name="password">Password</string>
+    <string name="forgot_note">Enter your registered phone number \nGet OTP Verification</string>
+    <string name="verification_note">Please enter the verification code send to</string>
+    <string name="new_pswd_note">Enter Your new Password and Confirm the Password</string>
+    <string name="new_password">New Password</string>
+    <string name="conf_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+
+    <string name="pref_key_transition_time" translatable="false">pref_key_transition_time</string>
+    <string name="relevance">Relevance</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="referal_txt"><![CDATA[Refer a friend & we\'ll give you & Your buddy Rs. 100 off on your next order above Rs. 299]]></string>
+    <string name="title_activity_old_login">ActivityOldLogin</string>
+    <string name="forgot">Forgot Password ?</string>
+    <string name="nav_header_desc">Header</string>
+    <string name="nav_header_title">Praveen Kumar</string>
+    <string name="nav_header_subtitle">ID - 233240</string>
+    <string name="action_settings">Settings</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="action_example">Example action</string>
+    <string name="about_us"> Speant Delivery is the online food ordering script with multiple striking rich features. Speant Delivery is simple and convenient to experience user-friendliness. Highly scale-able and rich quality script is the reason behind the distinctive exclusiveness.\n\n The most important trait is our clone script is reliable as well as customizable according to the business requirements. Undeniably Speant Delivery will meet all the requirements to commence your online food ordering business</string>
+    <string name="faq"><![CDATA[FAQ : \n\n1.How can I subscribe to Speant Delivery SUPER? We are currently doing a pilot for Speant Delivery SUPER. We will enable SUPER for you, very very soon! \n\n 2.I want to renew SUPER. How do I do it? It is simple - head to Account > My Account > Food SUPER and click on \'Stay SUPER\' to renew your membership. You will be able to renew only a few days before your current SUPER plan expires / anytime after your plan expires. \n\n  3.How do I cancel my SUPER membership? Once you are a SUPER member, you can not cancel it. In the case that you cancel the order with which you purchased SUPER, your membership will also be cancelled and refunded.]]></string>
+    <string name="txt_load_web">Are you sure? You want to load this page?</string>
+    <string name="txt_continue">Continue</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="request_ends">Request Ends in :</string>
+    <string name="view_direction">View Direction</string>
+
+</resources>

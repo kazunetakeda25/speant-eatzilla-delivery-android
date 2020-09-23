@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.ActivityForgot">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarStyleColoured"
+        android:layout_marginBottom="@dimen/xxhdpi_10"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <LinearLayout
+            android:id="@+id/forgot_mbl_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/login_welcon_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/t_xxh_20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xxhdpi_30"
+                android:layout_marginTop="@dimen/xxhdpi_10"
+                android:text="@string/forgot_note"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/t_xxh_16" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/forgot_phone_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t_xxh_20" />
+
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xxhdpi_10"
+                android:layout_marginRight="@dimen/xxhdpi_10"
+                android:layout_marginTop="@dimen/xxhdpi_10"
+                android:fastScrollEnabled="true"
+                card_view:cardCornerRadius="5dp">
+
+                <TextView
+                    android:id="@+id/forgot_mbl_submit_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:text="Next"
+                    android:textSize="@dimen/t_xxh_20"
+                    android:textStyle="bold"
+                    android:padding="@dimen/xxhdpi_10"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/forgot_otp_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/forgot_otp_head_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verification Code?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/t_xxh_22" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxhdpi_10"
+                android:text="@string/verification_note"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/t_xxh_18" />
+
+            <TextView
+                android:id="@+id/otp_mbl_num_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/t_xxh_18"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/ic_edit"
+                android:drawableRight="@drawable/ic_edit"
+                android:text="+91 9988776655"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxhdpi_10"
+                android:weightSum="6">
+
+                <EditText
+                    android:id="@+id/forgot_otp1_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/t_xxh_14"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/forgot_otp2_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/t_xxh_14"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/forgot_otp3_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/t_xxh_14"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/forgot_otp4_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/t_xxh_14"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/forgot_otp5_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/t_xxh_14"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/forgot_otp6_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/t_xxh_14"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t_xxh_20" />
+
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xxhdpi_10"
+                android:layout_marginRight="@dimen/xxhdpi_10"
+                android:layout_marginTop="@dimen/xxhdpi_10"
+                android:fastScrollEnabled="true"
+                card_view:cardCornerRadius="5dp">
+
+                <TextView
+                    android:id="@+id/forgot_otp_submit_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:text="Next"
+                    android:textSize="@dimen/t_xxh_20"
+                    android:textStyle="bold"
+                    android:padding="@dimen/xxhdpi_10"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/forgot_reset_pswd_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Password"
+                android:fontFamily="@font/clanpro_news"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xxhdpi_30"
+                android:layout_marginTop="@dimen/xxhdpi_20"
+                android:text="@string/new_pswd_note"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:textSize="@dimen/t_xxh_16" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxhdpi_20">
+
+                <EditText
+                    android:id="@+id/forgot_new_pswd_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/new_password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t_xxh_20" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxhdpi_20">
+
+                <EditText
+                    android:id="@+id/forgot_conf_pswd_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/conf_password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t_xxh_20" />
+
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xxhdpi_10"
+                android:layout_marginRight="@dimen/xxhdpi_10"
+                android:layout_marginTop="@dimen/xxhdpi_20"
+                android:fastScrollEnabled="true"
+                card_view:cardCornerRadius="5dp">
+
+                <TextView
+                    android:id="@+id/forgot_pswd_submit_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:text="Submit"
+                    android:textSize="@dimen/t_xxh_20"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:padding="@dimen/xxhdpi_10"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

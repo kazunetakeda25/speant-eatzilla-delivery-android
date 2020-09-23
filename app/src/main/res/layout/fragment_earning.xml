@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".ui.fragment.DailyEarningFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lit_grey"
+            android:padding="15dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_change_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/white"
+                android:paddingStart="@dimen/xxhdpi_20"
+                android:paddingTop="6dp"
+                android:paddingEnd="@dimen/xxhdpi_20"
+                android:paddingBottom="6dp"
+                android:text="Change Date"
+                android:textAllCaps="false"
+                android:textColor="@color/green"
+                app:elevation="@dimen/xxhdpi_20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingStart="@dimen/xxhdpi_20"
+                android:paddingTop="6dp"
+                android:paddingEnd="@dimen/xxhdpi_20"
+                android:paddingBottom="6dp"
+                android:text="10/2/2019"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:elevation="@dimen/xxhdpi_20" />
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_total_collected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="0.00"
+            android:textColor="@color/green"
+            android:textSize="@dimen/t_xxh_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_total_collect_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sourcesanspro_light"
+            android:text="Total earnings of the day"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/t_xxh_18" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/xxhdpi_20"
+            android:background="@drawable/black_border"
+            android:padding="@dimen/xxhdpi_10">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_incentives_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incentives of the day"
+                android:layout_centerVertical="true"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/t_xxh_18" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_incentive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:gravity="center_vertical"
+                android:text="00"
+                android:textColor="@color/green"
+                android:textSize="@dimen/t_xxh_22" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/xxhdpi_5"
+                android:layout_marginRight="@dimen/xxhdpi_5"
+                android:background="@color/grey" />-->
+
+           <!-- <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/xxhdpi_5" />-->
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

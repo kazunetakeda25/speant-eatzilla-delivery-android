@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_order_history"
+            android:title="Order History" />
+        <item
+            android:id="@+id/nav_earning_hisory"
+            android:title="Earning History" />
+        <item
+            android:id="@+id/nav_payout"
+            android:title="Payout Details" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_faq"
+            android:title="FAQ" />
+        <item
+            android:id="@+id/nav_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+
+
+        <!--<item
+            android:id="@+id/nav_refer_your_friend"
+            android:title="Refer your Friend" />
+        <item
+            android:id="@+id/nav_order_history"
+            android:title="Order History" />
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_login_history"
+            android:title="Login History" />
+
+        <item
+            android:id="@+id/nav_call_support"
+            android:title="Call Support" />
+        <item
+            android:id="@+id/nav_notification"
+            android:title="Notification" />-->
+
+
+    </group>
+
+
+
+</menu>

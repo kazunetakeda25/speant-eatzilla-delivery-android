@@ -1,0 +1,173 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/sourcesanspro_light</item>
+    </style>
+
+    <style name="AppTheme.Translucent" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DateDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="Toolbar2Theme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolbarTitleTheme" parent="android:Widget.TextView">
+
+        <!-- The action bar title font -->
+        <item name="android:fontFamily">@font/sourcesanspro_semibold</item>
+
+        <!-- Customizes the color of the action bar title-->
+        <item name="android:textColor">@color/white</item>
+
+        <!-- Customizes the size of the action bar title-->
+        <item name="android:textSize">@dimen/xxhdpi_20</item>
+
+    </style>
+
+    <style name="ToolbarTitle2Theme" parent="android:Widget.TextView">
+
+        <!-- The action bar title font -->
+        <item name="android:fontFamily">@font/sourcesanspro_semibold</item>
+
+        <!-- Customizes the color of the action bar title-->
+        <item name="android:textColor">@color/black</item>
+
+        <!-- Customizes the size of the action bar title-->
+        <item name="android:textSize">@dimen/xxhdpi_20</item>
+
+    </style>
+
+    <style name="MaterialDialogSheet" parent="@android:style/Theme.Dialog">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/t_xxh_20</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="DialogSlideAnim_leftright" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimationleftright</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="DialogSlideAnim_bottomup" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimationbottomup</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="DialogSlideAnim_leftright_Fullscreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowAnimationStyle">@style/DialogAnimationleftright</item>
+    </style>
+
+    <style name="DialogAnimationleftright">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="DialogAnimationbottomup">
+        <item name="android:windowEnterAnimation">@anim/bottom_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="TransperantToolbar" parent="Theme.AppCompat">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="NavDrawerTextStyle" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/sourcesanspro_regular</item>
+    </style>
+
+    <style name="MainToolbarTitleTheme" parent="android:Widget.TextView">
+
+        <!-- The action bar title font -->
+        <item name="android:fontFamily">@font/sourcesanspro_semibold</item>
+
+        <!-- Customizes the color of the action bar title-->
+        <item name="android:textColor">@color/black</item>
+
+        <!-- Customizes the size of the action bar title-->
+        <item name="android:textSize">@dimen/t_xxh_16</item>
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+    <style name="ToolbarStyleColoured" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/xxhdpi_20</item>
+        <item name="android:fontFamily">@font/sourcesanspro_semibold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!--<item name="android:windowAnimationStyle">@style/MaterialDialogSheetAnimation</item>-->
+    <!--<style name="MaterialDialogSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+-->
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/t_xxh_18</item>
+        <item name="android:fontFamily">@font/sourcesanspro_regular</item>
+    </style>
+</resources>
